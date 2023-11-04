@@ -9,17 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
-#define BASE 0
-#define NAV 1
-#define MOUS 2
-#define NUM 3
-#define SYMB 4
-#define FUNC 5
-#define EXTR 6
-#define GAME 7
-
 #define U_MOUSE_MOVE_MAX 1500
-#define U_MOUSE_SCROLL_MAX 100
 
 #undef MOVE_UP
 #undef MOVE_DOWN
@@ -30,27 +20,8 @@
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
 
-#undef SCROLL_UP
-#undef SCROLL_DOWN
-#undef SCROLL_LEFT
-#undef SCROLL_RIGHT
-#define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
-#define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
-#define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
-#define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
-
-#define PAUSE PAUSE_BREAK
-#define BT_0 BT_SEL 0
-#define BT_1 BT_SEL 1
-#define BT_2 BT_SEL 2
-#define BT_3 BT_SEL 3
-
 &mmv {
   time-to-max-speed-ms = <300>;
-};
-
-&mwh {
-  time-to-max-speed-ms = <600>;
 };
 
 / {
