@@ -30,11 +30,35 @@
     };
 
     macros {
-        new_macro: new_macro {
+        r_colon: r_colon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COLON &kp COLON>;
-            label = "NEW_MACRO";
+            label = "R_COLON";
+        };
+        r_parent: r_parent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR>;
+            label = "R_PARENT";
+        };
+        r_curly: r_curly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LBRC) &kp RBRC>;
+            label = "R_CURLY";
+        };
+        r_bracket: r_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT>;
+            label = "R_BRACKET";
+        };
+        r_generic: r_generic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GT>;
+            label = "R_GENERIC";
         };
     };
 
@@ -106,9 +130,9 @@
 
         rust_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp HASH  &kp LPAR   &kp RPAR   &kp LBKT    &kp RBKT  &none
-&none  &none  &none  &none  &none  &none    &kp PIPE  &kp EQUAL  &kp COLON  &kp ASTRK   &kp AMPS  &none
-&none  &none  &none  &none  &none  &none    &kp EXCL  &kp LBRC   &kp RBRC   &new_macro  &none     &none
+&none  &none  &none  &none  &none  &none    &kp HASH  &r_colon   &r_curly   &r_parent  &r_generic  &none
+&none  &none  &none  &none  &none  &none    &kp PIPE  &kp EQUAL  &kp COLON  &kp ASTRK  &kp AMPS    &none
+&none  &none  &none  &none  &none  &none    &kp EXCL  &kp LBRC   &kp RBRC   &none      &none       &none
                      &none  &none  &none    &none     &none      &none
             >;
         };
