@@ -90,6 +90,36 @@
             bindings = <&kp GT &kp EQUAL>;
             label = "R_GREAT";
         };
+        r_duobacktic: r_duobacktic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE>;
+            label = "R_DUOBACKTIC";
+        };
+        r_tribacktic: r_tribacktic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
+            label = "R_TRIBACKTIC";
+        };
+        r_str: r_str {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp DQT>;
+            label = "R_STR";
+        };
+        r_typea: r_typea {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER &kp GRAVE &kp GRAVE>;
+            label = "R_TYPEA";
+        };
+        r_typeb: r_typeb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp UNDER>;
+            label = "R_TYPEB";
+        };
     };
 
     keymap {
@@ -160,10 +190,10 @@
 
         rust_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
-&none  &none  &none  &none  &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
-&none  &none  &none  &none  &none  &none    &kp EXCL  &r_colon   &r_match   &r_less     &r_great    &none
-                     &none  &none  &none    &none     &none      &none
+&none  &none          &none     &none          &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
+&none  &r_typea       &r_typeb  &none          &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
+&none  &r_duobacktic  &r_str    &r_tribacktic  &none  &none    &kp EXCL  &r_colon   &r_match   &r_less     &r_great    &none
+                                &none          &none  &none    &none     &none      &none
             >;
         };
     };
