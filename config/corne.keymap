@@ -56,10 +56,10 @@
 
         helper_layer {
             bindings = <
-&trans          &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_GUI  &none   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans  &trans  &trans    &trans  &trans  &trans
+&none  &trans          &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp LCTRL       &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp LEFT_SHIFT  &kp LEFT_GUI  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
