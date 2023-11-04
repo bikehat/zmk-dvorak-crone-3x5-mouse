@@ -25,7 +25,7 @@
             bindings = <
 &none  &kp SEMI            &kp COMMA  &kp DOT              &kp P      &kp Y        &kp F       &kp G    &kp C          &kp R  &kp L             &none
 &none  &lt 4 A             &kp O      &kp E                &kp U      &kp I        &kp D       &kp H    &kp T          &kp N  &kp S             &none
-&none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J              &kp K      &lt 5 X      &kp B       &kp M    &lt 2 W        &kp V  &mt LEFT_SHIFT Z  &none
+&none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J              &kp K      &lt 5 X      &kp B       &kp M    &lt 3 W        &kp V  &mt LEFT_SHIFT Z  &none
                                       &mt LCTRL BACKSPACE  &kp SPACE  &kp ENTER    &lt 1 CAPS  &kp TAB  &mt RCTRL ESC
             >;
         };
