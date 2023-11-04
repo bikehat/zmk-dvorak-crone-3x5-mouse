@@ -31,7 +31,7 @@
             bindings = <
 &none  &kp SEMI            &kp COMMA  &kp DOT              &kp P      &kp Y        &kp F       &kp G    &kp C          &kp R  &kp L             &none
 &none  &lt 4 A             &kp O      &kp E                &kp U      &kp I        &kp D       &kp H    &kp T          &kp N  &kp S             &none
-&none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J              &kp K      &kp X        &kp B       &kp M    &lt 2 W        &kp V  &mt LEFT_SHIFT Z  &none
+&none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J              &kp K      &lt 5 X      &kp B       &kp M    &lt 2 W        &kp V  &mt LEFT_SHIFT Z  &none
                                       &mt LCTRL BACKSPACE  &kp SPACE  &kp ENTER    &lt 1 CAPS  &kp TAB  &mt RCTRL ESC
             >;
         };
@@ -69,6 +69,15 @@
 &none  &none  &none  &none  &none  &none    &none  &kp UNDERSCORE  &kp SLASH  &kp MINUS  &kp QUESTION  &none
 &none  &none  &none  &none  &none  &none    &none  &none           &none      &none      &none         &none
                      &none  &none  &none    &none  &none           &none
+            >;
+        };
+
+        num_layer {
+            bindings = <
+&none  &none  &none     &none          &none      &none    &kp PRCNT     &kp N7  &kp N8  &kp N9  &kp SLASH  &none
+&none  &none  &none     &kp GRAVE      &kp TILDE  &none    &kp ASTERISK  &kp N4  &kp N5  &kp N6  &kp MINUS  &none
+&none  &none  &kp PIPE  &kp BACKSLASH  &kp AT     &none    &kp N0        &kp N1  &kp N2  &kp N3  &kp PLUS   &none
+                        &none          &none      &none    &none         &kp N0  &kp N0
             >;
         };
     };
