@@ -89,9 +89,9 @@
 
         rust_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp HASH  &kp LPAR   &kp RPAR   &kp LBRC   &kp RIGHT_BRACE  &none
-&none  &none  &none  &none  &none  &none    &kp PIPE  &kp EQUAL  &kp COLON  &kp ASTRK  &kp AMPS         &none
-&none  &none  &none  &none  &none  &none    &kp EXCL  &kp LBKT   &kp RBKT   &none      &none            &none
+&none  &none  &none  &none  &none  &none    &kp HASH  &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT  &none
+&none  &none  &none  &none  &none  &none    &kp PIPE  &kp EQUAL  &kp COLON  &kp ASTRK  &kp AMPS  &none
+&none  &none  &none  &none  &none  &none    &kp EXCL  &kp LBRC   &kp RBRC   &none      &none     &none
                      &none  &none  &none    &none     &none      &none
             >;
         };
