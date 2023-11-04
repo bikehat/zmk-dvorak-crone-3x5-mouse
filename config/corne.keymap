@@ -60,6 +60,36 @@
             bindings = <&kp LT &kp GT>;
             label = "R_GENERIC";
         };
+        r_pipe: r_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp PIPE>;
+            label = "R_PIPE";
+        };
+        r_return: r_return {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "R_RETURN";
+        };
+        r_match: r_match {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "R_MATCH";
+        };
+        r_less: r_less {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EQUAL>;
+            label = "R_LESS";
+        };
+        r_great: r_great {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp EQUAL>;
+            label = "R_GREAT";
+        };
     };
 
     keymap {
@@ -130,9 +160,9 @@
 
         rust_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp HASH  &r_colon   &r_curly   &r_parent  &r_generic  &none
-&none  &none  &none  &none  &none  &none    &kp PIPE  &kp EQUAL  &kp COLON  &kp ASTRK  &kp AMPS    &none
-&none  &none  &none  &none  &none  &none    &kp EXCL  &kp LBRC   &kp RBRC   &none      &none       &none
+&none  &none  &none  &none  &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
+&none  &none  &none  &none  &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
+&none  &none  &none  &none  &none  &none    &kp EXCL  &r_colon   &r_match   &r_less     &r_great    &none
                      &none  &none  &none    &none     &none      &none
             >;
         };
