@@ -120,6 +120,12 @@
             bindings = <&kp GRAVE &kp GRAVE &kp UNDER>;
             label = "R_TYPEB";
         };
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
