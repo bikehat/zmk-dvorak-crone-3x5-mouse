@@ -57,7 +57,7 @@
         r_generic: r_generic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp GT>;
+            bindings = <&kp LT &kp LEFT &kp GT>;
             label = "R_GENERIC";
         };
         r_pipe: r_pipe {
@@ -111,7 +111,7 @@
         r_typea: r_typea {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp UNDER &kp GRAVE &kp GRAVE>;
+            bindings = <&kp UNDER &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp UNDER &kp LEFT &kp LEFT &kp LEFT>;
             label = "R_TYPEA";
         };
         r_typeb: r_typeb {
@@ -119,12 +119,6 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp UNDER>;
             label = "R_TYPEB";
-        };
-        r_bin: r_bin {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT &kp X &kp A &kp UNDER &kp GRAVE &kp GRAVE &kp LEFT &kp P &kp A &kp GRAVE &kp GRAVE &kp UNDER>;
-            label = "R_BIN";
         };
     };
 
