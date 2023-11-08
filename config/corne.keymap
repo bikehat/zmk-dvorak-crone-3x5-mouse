@@ -181,10 +181,10 @@
 
         shortcut_symright_layer {
             bindings = <
-&none  &none  &none  &none  &none      &none     &none     &kp HASH        &none      &none      &none      &none
-&none  &none  &none  &none  &kp QMARK  &kp N0    &kp DLLR  &kp UNDERSCORE  &kp SLASH  &kp MINUS  &kp COLON  &none
-&none  &none  &none  &none  &none      &none     &none     &kp EXCL        &kp LBRC   &kp RBRC   &none      &none
-                     &none  &none      &none     &none     &none           &trans
+&none  &none  &none  &none  &none  &none    &none     &kp LEFT_BRACE  &kp RIGHT_BRACE  &none     &none      &none
+&none  &none  &none  &none  &none  &none    &kp EXCL  &kp UNDERSCORE  &kp SLASH        &kp HASH  &kp COLON  &none
+&none  &none  &none  &none  &none  &none    &none     &kp NUMBER_0    &kp DLLR         &none     &none      &none
+                     &none  &none  &none    &none     &none           &trans
             >;
         };
 
