@@ -123,7 +123,7 @@
         r_bin: r_bin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT &kp X &kp GRAVE &kp GRAVE &kp LEFT &kp P &kp A &kp GRAVE &kp GRAVE>;
+            bindings = <&kp LEFT &kp X &kp GRAVE &kp GRAVE &kp P &kp A &kp GRAVE &kp GRAVE>;
             label = "R_BIN";
         };
     };
