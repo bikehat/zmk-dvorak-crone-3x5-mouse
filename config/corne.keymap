@@ -45,7 +45,7 @@
         r_curly: r_curly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LBRC) &kp RBRC>;
+            bindings = <&kp LS(LBRC) &kp RBRC &kp LEFT &kp ENTER>;
             label = "R_CURLY";
         };
         r_bracket: r_bracket {
@@ -126,6 +126,18 @@
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT>;
             label = "RR_DUOBACKTIC";
         };
+        md_bold: md_bold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ASTRK &kp ASTRK &kp ASTRK &kp ASTRK &kp LEFT &kp LEFT>;
+            label = "MD_BOLD";
+        };
+        md_ita: md_ita {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER &kp UNDER &kp LEFT>;
+            label = "MD_ITA";
+        };
     };
 
     keymap {
@@ -171,7 +183,7 @@
             bindings = <
 &none  &none  &none  &none  &none      &none     &none     &kp HASH        &none      &none      &none      &none
 &none  &none  &none  &none  &kp QMARK  &kp N0    &kp DLLR  &kp UNDERSCORE  &kp SLASH  &kp MINUS  &kp COLON  &none
-&none  &none  &none  &none  &none      &none     &none     &kp EXCL        &none      &none      &none      &none
+&none  &none  &none  &none  &none      &none     &none     &kp EXCL        &kp LBRC   &kp RBRC   &none      &none
                      &none  &none      &none     &none     &none           &trans
             >;
         };
@@ -196,8 +208,8 @@
 
         rust_layer {
             bindings = <
-&none  &none    &none          &none           &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
-&none  &r_str   &r_duobacktic  &r_tribacktic   &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
+&none  &r_str   &r_duobacktic  &r_tribacktic   &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
+&none  &md_ita  &md_bold       &r_tribacktic   &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
 &none  &rr_str  &r_typea       &rr_duobacktic  &none  &none    &kp EXCL  &r_colon   &r_match   &none       &rr_str     &none
                                &none           &none  &none    &none     &none      &trans
             >;
