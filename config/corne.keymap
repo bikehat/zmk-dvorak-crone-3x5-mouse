@@ -147,8 +147,14 @@
         rrp_type: rrp_type {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp X &kp I &kp UNDER &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp UNDER &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
+            bindings = <&kp X &kp I &kp UNDER &r_duobacktic &r_duobacktic &kp UNDER &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "RRP_TYPE";
+        };
+        rr_tripbacktic: rr_tripbacktic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&r_tribacktic &r_tribacktic &kp LEFT &kp LEFT &kp LEFT>;
+            label = "RR_TRIPBACKTIC";
         };
     };
 
@@ -220,10 +226,10 @@
 
         rust_layer {
             bindings = <
-&none  &rrp_doubacktic  &rrp_type  &none          &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
-&none  &r_duobacktic    &rr_type   &r_tribacktic  &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
-&none  &rr_duobacktic   &rr_type   &r_tribacktic  &none  &none    &kp EXCL  &r_colon   &r_match   &none       &rr_str     &none
-                                   &none          &none  &none    &none     &none      &trans
+&none  &rrp_doubacktic  &rrp_type  &none            &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
+&none  &r_duobacktic    &rr_type   &r_tribacktic    &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
+&none  &rr_duobacktic   &rr_type   &rr_tripbacktic  &none  &none    &kp EXCL  &r_colon   &r_match   &none       &rr_str     &none
+                                   &none            &none  &none    &none     &none      &trans
             >;
         };
     };
