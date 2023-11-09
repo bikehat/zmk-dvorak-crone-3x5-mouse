@@ -141,13 +141,13 @@
         rrp_doubacktic: rrp_doubacktic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp X &kp I &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
+            bindings = <&kp LEFT &kp X &kp I &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "RRP_DOUBACKTIC";
         };
         rrp_type: rrp_type {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp X &kp I &kp UNDER &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp UNDER &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
+            bindings = <&kp LEFT &kp X &kp I &kp UNDER &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp UNDER &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "RRP_TYPE";
         };
         rr_tripbacktic: rr_tripbacktic {
@@ -159,13 +159,13 @@
         mdp_bold: mdp_bold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp X &kp I &kp ASTRK &kp ASTRK &kp ASTRK &kp ASTRK &kp LEFT &kp LEFT &kp ESC &kp P>;
+            bindings = <&kp LEFT &kp X &kp I &kp ASTRK &kp ASTRK &kp ASTRK &kp ASTRK &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "MDP_BOLD";
         };
         mdp_ita: mdp_ita {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp X &kp I &kp UNDER &kp UNDER &kp LEFT &kp LEFT &kp ESC &kp P>;
+            bindings = <&kp LEFT &kp X &kp I &kp UNDER &kp UNDER &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "MDP_ITA";
         };
     };
