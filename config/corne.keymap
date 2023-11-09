@@ -159,7 +159,7 @@
         mdp_bold: mdp_bold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT &kp X &kp I &kp ASTRK &kp ASTRK &kp ASTRK &kp ASTRK &kp LEFT &kp LEFT &kp ESC &kp P>;
+            bindings = <&kp LEFT &kp X &kp I &kp ASTRK &kp ASTRK &kp ASTRK &kp ASTRK &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "MDP_BOLD";
         };
         mdp_ita: mdp_ita {
