@@ -108,11 +108,11 @@
             bindings = <&kp DQT &kp DQT>;
             label = "R_STR";
         };
-        r_typea: r_typea {
+        rr_type: rr_type {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp UNDER &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp UNDER &kp LEFT &kp LEFT &kp LEFT>;
-            label = "R_TYPEA";
+            label = "RR_TYPE";
         };
         rr_str: rr_str {
             compatible = "zmk,behavior-macro";
@@ -137,6 +137,18 @@
             #binding-cells = <0>;
             bindings = <&kp UNDER &kp UNDER &kp LEFT>;
             label = "MD_ITA";
+        };
+        rrp_doubacktic: rrp_doubacktic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
+            label = "RRP_DOUBACKTIC";
+        };
+        rrp_type: rrp_type {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp UNDER &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
+            label = "RRP_TYPE";
         };
     };
 
@@ -181,9 +193,9 @@
 
         shortcut_symright_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp HASH      &kp COLON  &none
+&none  &none  &none  &none  &none  &none    &md_ita   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp HASH      &kp COLON  &none
 &none  &none  &none  &none  &none  &none    &kp EXCL  &kp UNDERSCORE  &kp SLASH        &kp ASTRK     &kp AMPS   &none
-&none  &none  &none  &none  &none  &none    &none     &kp NUMBER_0    &kp DLLR         &kp QUESTION  &kp MINUS  &none
+&none  &none  &none  &none  &none  &none    &md_bold  &kp NUMBER_0    &kp DLLR         &kp QUESTION  &kp MINUS  &none
                      &none  &none  &none    &none     &none           &trans
             >;
         };
@@ -208,10 +220,10 @@
 
         rust_layer {
             bindings = <
-&none  &r_str          &r_duobacktic  &none          &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
-&none  &md_ita         &md_bold       &none          &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
-&none  &rr_duobacktic  &r_typea       &r_tribacktic  &none  &none    &kp EXCL  &r_colon   &r_match   &none       &rr_str     &none
-                                      &none          &none  &none    &none     &none      &trans
+&none  &rrp_doubacktic  &rrp_type  &none          &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
+&none  &r_duobacktic    &rr_type   &r_tribacktic  &none  &none    &r_pipe   &kp EQUAL  &r_return  &kp ASTRK   &kp AMPS    &none
+&none  &rr_duobacktic   &rr_type   &r_tribacktic  &none  &none    &kp EXCL  &r_colon   &r_match   &none       &rr_str     &none
+                                   &none          &none  &none    &none     &none      &trans
             >;
         };
     };
