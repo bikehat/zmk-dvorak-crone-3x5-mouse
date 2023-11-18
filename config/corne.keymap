@@ -36,132 +36,154 @@
             bindings = <&kp COLON &kp COLON>;
             label = "R_COLON";
         };
+
         r_parent: r_parent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR>;
             label = "R_PARENT";
         };
+
         r_curly: r_curly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LBRC) &kp RBRC &kp LEFT &kp ENTER>;
             label = "R_CURLY";
         };
+
         r_bracket: r_bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp RBKT>;
             label = "R_BRACKET";
         };
+
         r_generic: r_generic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LT &kp GT &kp LEFT>;
             label = "R_GENERIC";
         };
+
         r_pipe: r_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp PIPE &kp PIPE>;
             label = "R_PIPE";
         };
+
         r_return: r_return {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp GT>;
             label = "R_RETURN";
         };
+
         r_match: r_match {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
             label = "R_MATCH";
         };
+
         r_less: r_less {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LT &kp EQUAL>;
             label = "R_LESS";
         };
+
         r_great: r_great {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GT &kp EQUAL>;
             label = "R_GREAT";
         };
+
         r_duobacktic: r_duobacktic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE>;
             label = "R_DUOBACKTIC";
         };
+
         r_tribacktic: r_tribacktic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
             label = "R_TRIBACKTIC";
         };
+
         r_str: r_str {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp DQT>;
             label = "R_STR";
         };
+
         rr_type: rr_type {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp UNDER &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp UNDER &kp LEFT &kp LEFT &kp LEFT>;
             label = "RR_TYPE";
         };
+
         rr_str: rr_str {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp DQT &kp LEFT>;
             label = "RR_STR";
         };
+
         rr_duobacktic: rr_duobacktic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT>;
             label = "RR_DUOBACKTIC";
         };
+
         md_bold: md_bold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp ASTRK &kp ASTRK &kp ASTRK &kp ASTRK &kp LEFT &kp LEFT>;
             label = "MD_BOLD";
         };
+
         md_ita: md_ita {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp UNDER &kp UNDER &kp LEFT>;
             label = "MD_ITA";
         };
+
         rrp_doubacktic: rrp_doubacktic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp X &kp I &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "RRP_DOUBACKTIC";
         };
+
         rrp_type: rrp_type {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp X &kp I &kp UNDER &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp UNDER &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "RRP_TYPE";
         };
+
         rr_tripbacktic: rr_tripbacktic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT>;
             label = "RR_TRIPBACKTIC";
         };
+
         mdp_bold: mdp_bold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp X &kp I &kp ASTRK &kp ASTRK &kp ASTRK &kp ASTRK &kp LEFT &kp LEFT &kp LEFT &kp ESC &kp P>;
             label = "MDP_BOLD";
         };
+
         mdp_ita: mdp_ita {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -175,7 +197,7 @@
 
         dvorak_layer {
             bindings = <
-&none  &lt 4 SEMICOLON     &kp COMMA  &kp DOT    &kp P      &kp Y          &kp F       &kp G      &kp C          &kp R  &kp L             &none
+&none  &lt 4 SEMICOLON     &kp COMMA  &lt 6 DOT  &kp P      &kp Y          &kp F       &kp G      &lt 6 C        &kp R  &kp L             &none
 &none  &kp A               &kp O      &kp E      &lt 5 U    &kp I          &kp D       &kp H      &kp T          &kp N  &kp S             &none
 &none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J    &lt 7 K    &kp X          &kp B       &kp M      &lt 3 W        &kp V  &mt LEFT_SHIFT Z  &none
                                       &lt 4 ESC  &lt 4 TAB  &lt 6 SPACE    &lt 1 CAPS  &kp ENTER  &kp BACKSPACE
