@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -21,14 +21,9 @@
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
 
-&mmv {
-    time-to-max-speed-ms = <300>;
-};
+&mmv { time-to-max-speed-ms = <300>; };
 
 / {
-    behaviors {
-    };
-
     macros {
         r_colon: r_colon {
             compatible = "zmk,behavior-macro";
@@ -215,19 +210,19 @@
 
         helper_left_layer {
             bindings = <
-&none  &trans          &trans     &trans  &trans    &trans          &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans          &trans     &trans  &trans    &trans          &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp LEFT_SHIFT  &kp LCTRL  &none   &kp LGUI  &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &none
-                                  &none   &trans    &none           &none   &none   &none
+&none  &trans          &trans     &trans  &trans    &trans          &trans  &trans    &trans     &trans  &trans  &none
+&none  &trans          &trans     &trans  &trans    &trans          &trans  &trans    &trans     &trans  &trans  &none
+&none  &kp LEFT_SHIFT  &kp LCTRL  &none   &kp LGUI  &kp LEFT_ALT    &trans  &trans    &trans     &trans  &trans  &none
+                                  &none   &trans    &none           &none   &kp PLUS  &kp MINUS
             >;
         };
 
         helper_right_layer {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &trans         &trans         &trans  &trans     &trans           &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans         &trans         &trans  &trans     &trans           &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_ALT  &kp RIGHT_GUI  &none   &kp RCTRL  &kp RIGHT_SHIFT  &none
-                       &none   &trans  &none     &none          &none          &none
+&none  &trans  &trans  &trans     &trans    &trans    &trans         &trans         &trans  &trans     &trans           &none
+&none  &trans  &trans  &trans     &trans    &trans    &trans         &trans         &trans  &trans     &trans           &none
+&none  &trans  &trans  &trans     &trans    &trans    &kp RIGHT_ALT  &kp RIGHT_GUI  &none   &kp RCTRL  &kp RIGHT_SHIFT  &none
+                       &kp MINUS  &kp PLUS  &none     &none          &none          &none
             >;
         };
 
