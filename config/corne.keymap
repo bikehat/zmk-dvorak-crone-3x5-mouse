@@ -192,10 +192,10 @@
 
         dvorak_layer {
             bindings = <
-&none  &lt 4 SEMICOLON     &kp COMMA  &lt 6 DOT  &kp P      &kp Y          &kp F       &kp G      &lt 6 C        &kp R  &kp L             &none
-&none  &kp A               &kp O      &kp E      &lt 5 U    &kp I          &kp D       &kp H      &kp T          &kp N  &kp S             &none
-&none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J    &lt 7 K    &kp X          &kp B       &kp M      &lt 3 W        &kp V  &mt LEFT_SHIFT Z  &none
-                                      &lt 4 ESC  &lt 4 TAB  &lt 6 SPACE    &lt 1 CAPS  &kp ENTER  &kp BACKSPACE
+&none  &lt 4 SEMICOLON     &lt 7 COMMA  &lt 6 DOT  &kp P      &kp Y          &kp F       &kp G      &lt 6 C        &kp R  &kp L             &none
+&none  &kp A               &kp O        &kp E      &lt 5 U    &kp I          &kp D       &kp H      &kp T          &kp N  &kp S             &none
+&none  &mt LEFT_SHIFT SQT  &kp Q        &lt 2 J    &lt 7 K    &kp X          &kp B       &kp M      &lt 3 W        &kp V  &mt LEFT_SHIFT Z  &none
+                                        &lt 4 ESC  &lt 4 TAB  &lt 6 SPACE    &lt 1 CAPS  &kp ENTER  &kp BACKSPACE
             >;
         };
 
@@ -237,7 +237,7 @@
 
         num_layer {
             bindings = <
-&none  &none      &kp PIPE   &kp BSLH  &none   &none     &kp PRCNT     &kp N7   &kp N8  &kp N9  &kp SLASH  &none
+&none  &kp CARET  &kp PIPE   &kp BSLH  &none   &none     &kp PRCNT     &kp N7   &kp N8  &kp N9  &kp SLASH  &none
 &none  &kp TILDE  &kp GRAVE  &kp AT    &none   &none     &kp ASTERISK  &kp N4   &kp N5  &kp N6  &kp MINUS  &none
 &none  &none      &none      &none     &none   &none     &kp PLUS      &kp N1   &kp N2  &kp N3  &kp N0     &none
                              &trans    &trans  &trans    &none         &kp DOT  &trans
