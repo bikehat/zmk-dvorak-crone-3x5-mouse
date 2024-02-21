@@ -192,7 +192,7 @@
 
         dvorak_layer {
             bindings = <
-&none  &lt 4 SEMICOLON     &lt 7 COMMA  &lt 6 DOT  &kp P      &kp Y          &kp F       &kp G      &lt 6 C        &kp R  &kp L             &none
+&none  &lt 4 SEMICOLON     &lt 7 COMMA  &lt 6 DOT  &lt 7 P    &kp Y          &kp F       &kp G      &lt 6 C        &kp R  &kp L             &none
 &none  &kp A               &kp O        &kp E      &lt 5 U    &kp I          &kp D       &kp H      &kp T          &kp N  &kp S             &none
 &none  &mt LEFT_SHIFT SQT  &kp Q        &lt 2 J    &lt 7 K    &kp X          &kp B       &kp M      &lt 3 W        &kp V  &mt LEFT_SHIFT Z  &none
                                         &lt 4 ESC  &lt 4 TAB  &lt 6 SPACE    &lt 1 CAPS  &kp ENTER  &kp BACKSPACE
