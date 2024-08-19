@@ -199,9 +199,9 @@
 
         dvorak_layer {
             bindings = <
-&none  &kp SEMI            &kp COMMA  &lt 6 DOT  &lt 5 P  &kp Y          &kp F       &kp G      &lt 6 C        &kp R  &kp L             &none
-&none  &kp A               &kp O      &kp E      &kp U    &kp I          &kp D       &kp H      &kp T          &kp N  &kp S             &none
-&none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J    &lt 7 K  &kp X          &kp B       &kp M      &lt 3 W        &kp V  &mt LEFT_SHIFT Z  &none
+&none  &kp SEMI            &kp COMMA  &lt 6 DOT  &lt 5 P  &kp Y          &kp F       &kp G      &lt 6 C        &kp R    &kp L             &none
+&none  &kp A               &kp O      &kp E      &kp U    &kp I          &kp D       &kp H      &kp T          &kp N    &kp S             &none
+&none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J    &lt 7 K  &kp X          &kp B       &kp M      &lt 3 W        &lt 7 V  &mt LEFT_SHIFT Z  &none
                                       &kp ESC    &kp TAB  &lt 6 SPACE    &lt 1 CAPS  &kp ENTER  &kp BACKSPACE
             >;
         };
@@ -262,10 +262,10 @@
 
         rust_layer {
             bindings = <
-&none  &rrp_doubacktic  &mdp_bold  &rrp_type        &none  &none    &kp HASH  &r_parent  &r_curly   &r_bracket  &r_generic  &none
-&none  &r_duobacktic    &mdp_ita   &r_tribacktic    &none  &none    &r_pipe   &kp UNDER  &r_return  &kp ASTRK   &kp AMPS    &none
-&none  &rr_duobacktic   &rr_type   &rr_tripbacktic  &none  &none    &kp EXCL  &kp EQUAL  &r_match   &r_colon    &r_cur      &none
-                                   &none            &none  &none    &none     &none      &trans
+&none  &rrp_doubacktic  &mdp_bold  &rrp_type        &none  &none    &r_bracket  &r_parent  &r_curly   &r_cur     &r_generic  &none
+&none  &r_duobacktic    &mdp_ita   &r_tribacktic    &none  &none    &r_pipe     &kp UNDER  &r_return  &kp ASTRK  &kp AMPS    &none
+&none  &rr_duobacktic   &rr_type   &rr_tripbacktic  &none  &none    &kp EXCL    &kp EQUAL  &r_match   &none      &r_colon    &none
+                                   &none            &none  &none    &none       &none      &trans
             >;
         };
 
