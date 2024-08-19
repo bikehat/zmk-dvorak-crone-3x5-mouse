@@ -199,7 +199,7 @@
 
         dvorak_layer {
             bindings = <
-&none  &kp SEMI            &kp COMMA  &lt 6 DOT  &lt 5 P  &kp Y          &kp F       &kp G      &lt 6 C        &kp R    &kp L             &none
+&none  &kp SEMI            &kp COMMA  &lt 6 DOT  &lt 5 P  &kp Y          &kp F       &lt 4 G    &lt 6 C        &kp R    &kp L             &none
 &none  &kp A               &kp O      &kp E      &kp U    &kp I          &kp D       &kp H      &kp T          &kp N    &kp S             &none
 &none  &mt LEFT_SHIFT SQT  &kp Q      &lt 2 J    &lt 7 K  &kp X          &kp B       &kp M      &lt 3 W        &lt 7 V  &mt LEFT_SHIFT Z  &none
                                       &kp ESC    &kp TAB  &lt 6 SPACE    &lt 1 CAPS  &kp ENTER  &kp BACKSPACE
@@ -235,10 +235,10 @@
 
         symbol_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+&none  &kp QUESTION   &kp CARET   &kp LBKT  &kp RBKT       &kp GRAVE      &none  &none  &none  &none  &none  &none
+&none  &kp AMPERSAND  &kp STAR    &kp LPAR  &kp RPAR       &kp TILDE      &none  &none  &none  &none  &none  &none
+&none  &kp HASH       &kp DOLLAR  &kp LBRC  &kp RBRC       &kp AT_SIGN    &none  &none  &none  &none  &none  &none
+                                  &kp PIPE  &kp BACKSLASH  &kp SLASH      &none  &none  &none
             >;
         };
 
