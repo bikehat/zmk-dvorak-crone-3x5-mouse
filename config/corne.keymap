@@ -278,10 +278,10 @@
 
         rust_layer {
             bindings = <
-&none  &rrp_doubacktic  &mdp_bold  &rrp_type        &none    &none    &r_bracket  &r_parent  &r_curly   &r_cur     &r_generic  &none
-&none  &r_duobacktic    &mdp_ita   &r_tribacktic    &none    &none    &r_pipe     &kp UNDER  &r_return  &kp ASTRK  &kp AMPS    &none
-&none  &rr_duobacktic   &rr_type   &rr_tripbacktic  &md_ita  &none    &kp EXCL    &kp EQUAL  &r_match   &none      &r_colon    &none
-                                   &none            &none    &none    &none       &none      &trans
+&none  &rrp_doubacktic  &mdp_bold  &rrp_type        &none    &none       &r_bracket  &r_parent  &r_curly   &r_cur     &r_generic  &none
+&none  &r_duobacktic    &mdp_ita   &r_tribacktic    &none    &none       &r_pipe     &kp UNDER  &r_return  &kp ASTRK  &kp AMPS    &none
+&none  &rr_duobacktic   &rr_type   &rr_tripbacktic  &md_ita  &mdp_ita    &kp EXCL    &kp EQUAL  &r_match   &none      &r_colon    &none
+                                   &none            &none    &none       &none       &none      &trans
             >;
         };
 
