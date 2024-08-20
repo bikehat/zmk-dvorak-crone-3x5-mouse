@@ -251,9 +251,9 @@
 
         symbol_layer {
             bindings = <
-&none  &kp QUESTION   &kp CARET   &kp LBRC   &kp RBRC  &kp PIPE         &none  &none  &none  &none  &none  &none
-&none  &kp AMPERSAND  &kp STAR    &kp MINUS  &kp FSLH  &kp BACKSLASH    &none  &none  &none  &none  &none  &kp AT
-&none  &kp HASH       &kp DOLLAR  &kp LPAR   &kp RPAR  &kp GRAVE        &none  &none  &none  &none  &none  &none
+&none  &kp QUESTION   &kp CARET   &kp LBRC   &kp RBRC  &kp PIPE         &none  &none  &none  &none  &none   &none
+&none  &kp AMPERSAND  &kp STAR    &kp MINUS  &kp FSLH  &kp BACKSLASH    &none  &none  &none  &none  &kp AT  &none
+&none  &kp HASH       &kp DOLLAR  &kp LPAR   &kp RPAR  &kp GRAVE        &none  &none  &none  &none  &none   &none
                                   &kp LBKT   &kp RBKT  &kp TILDE        &none  &none  &none
             >;
         };
@@ -278,10 +278,10 @@
 
         rust_layer {
             bindings = <
-&none  &rrp_doubacktic  &mdp_bold  &rrp_type        &none    &none       &r_bracket  &r_parent  &r_curly   &r_cur     &r_generic  &none
-&none  &r_duobacktic    &mdp_ita   &r_tribacktic    &none    &none       &r_pipe     &kp UNDER  &r_return  &kp ASTRK  &kp AMPS    &none
-&none  &rr_duobacktic   &rr_type   &rr_tripbacktic  &md_ita  &mdp_ita    &kp EXCL    &kp EQUAL  &r_match   &none      &r_colon    &none
-                                   &none            &none    &none       &none       &none      &trans
+&none  &rrp_doubacktic  &rrp_type      &none            &mdp_ita  &mdp_bold    &r_bracket  &r_parent  &r_curly   &r_cur     &r_generic  &none
+&none  &r_duobacktic    &r_tribacktic  &rr_tripbacktic  &none     &none        &r_pipe     &kp UNDER  &r_return  &kp ASTRK  &kp AMPS    &none
+&none  &rr_duobacktic   &rr_type       &none            &md_ita   &md_bold     &kp EXCL    &kp EQUAL  &r_match   &none      &r_colon    &none
+                                       &none            &none     &none        &none       &none      &trans
             >;
         };
 
