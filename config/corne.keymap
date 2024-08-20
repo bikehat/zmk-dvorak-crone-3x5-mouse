@@ -202,11 +202,11 @@
     };
 
     behaviors {
-        x_tog_control: x_tog_control {
+        esc_tog_control_layer: esc_tog_control_layer {
             compatible = "zmk,behavior-tap-dance";
-            label = "X_TOG_CONTROL";
+            label = "ESC_TOG_CONTROL_LAYER";
             #binding-cells = <0>;
-            bindings = <&kp X>, <&tog 6>;
+            bindings = <&kp ESC>, <&tog 6>;
         };
     };
 
@@ -215,19 +215,19 @@
 
         dvorak_layer {
             bindings = <
-&none  &kp SEMI            &kp COMMA  &lt 6 DOT  &lt 5 P  &kp Y             &kp F       &lt 4 G    &lt 6 C        &kp R    &kp L             &none
-&none  &kp A               &kp O      &kp E      &kp U    &kp I             &kp D       &kp H      &kp T          &kp N    &kp S             &none
-&none  &mt LEFT_SHIFT SQT  &lt 8 Q    &lt 2 J    &lt 7 K  &x_tog_control    &kp B       &kp M      &lt 3 W        &lt 7 V  &mt LEFT_SHIFT Z  &none
-                                      &kp ESC    &kp TAB  &lt 6 SPACE       &lt 1 CAPS  &kp ENTER  &kp BACKSPACE
+&none  &kp SEMI            &kp COMMA  &lt 5 DOT               &lt 6 P  &kp Y          &kp F       &kp G      &lt 6 C        &kp R    &kp L             &none
+&none  &kp A               &kp O      &kp E                   &kp U    &kp I          &kp D       &kp H      &kp T          &kp N    &kp S             &none
+&none  &mt LEFT_SHIFT SQT  &lt 5 Q    &lt 2 J                 &lt 7 K  &kp X          &kp B       &lt 4 M    &lt 3 W        &lt 7 V  &mt LEFT_SHIFT Z  &none
+                                      &esc_tog_control_layer  &kp TAB  &lt 6 SPACE    &lt 1 CAPS  &kp ENTER  &kp BACKSPACE
             >;
         };
 
         bt_layer {
             bindings = <
-&none  &none           &none         &none         &none         &none           &none  &kp F9  &kp F10  &kp F11  &kp F12  &none
-&none  &bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &none  &kp F5  &kp F6   &kp F7   &kp F8   &kp LS(CAPSLOCK)
-&none  &kp LEFT_SHIFT  &kp LCTRL     &none         &kp LGUI      &kp LALT        &none  &kp F1  &kp F2   &kp F3   &kp F4   &none
-                                     &bt BT_CLR    &none         &kp DELETE      &none  &none   &none
+&none  &none           &none         &none         &bt BT_CLR    &none           &none  &kp F9  &kp F10         &kp F11  &kp F12  &none
+&none  &bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &none  &kp F5  &kp F6          &kp F7   &kp F8   &kp LS(CAPSLOCK)
+&none  &kp LEFT_SHIFT  &kp LCTRL     &none         &kp LGUI      &kp LALT        &none  &kp F1  &kp F2          &kp F3   &kp F4   &none
+                                     &none         &none         &kp DELETE      &none  &none   &bt BT_CLR_ALL
             >;
         };
 
@@ -251,17 +251,17 @@
 
         symbol_layer {
             bindings = <
-&none  &kp QUESTION   &kp CARET   &kp LBKT  &kp RBKT       &kp GRAVE      &none  &none  &none  &none  &none  &none
-&none  &kp AMPERSAND  &kp STAR    &kp LPAR  &kp RPAR       &kp TILDE      &none  &none  &none  &none  &none  &none
-&none  &kp HASH       &kp DOLLAR  &kp LBRC  &kp RBRC       &kp AT_SIGN    &none  &none  &none  &none  &none  &none
-                                  &kp PIPE  &kp BACKSLASH  &kp SLASH      &none  &none  &none
+&none  &kp QUESTION   &kp CARET   &kp LPAR   &kp RPAR  &kp PIPE         &none  &none  &none  &none  &none  &none
+&none  &kp AMPERSAND  &kp STAR    &kp MINUS  &kp FSLH  &kp BACKSLASH    &none  &none  &none  &none  &none  &kp AT
+&none  &kp HASH       &kp DOLLAR  &kp LBRC   &kp RBRC  &kp GRAVE        &none  &none  &none  &none  &none  &none
+                                  &kp LBKT   &kp RBKT  &kp TILDE        &none  &none  &none
             >;
         };
 
         num_layer {
             bindings = <
-&none  &none  &none  &none   &none   &none     &kp SLASH  &kp N7   &kp N8   &kp N9  &kp MINUS  &none
-&none  &none  &none  &none   &none   &none     &kp STAR   &kp N4   &kp N5   &kp N6  &kp PLUS   &none
+&none  &none  &none  &none   &none   &none     &kp STAR   &kp N7   &kp N8   &kp N9  &kp PLUS   &none
+&none  &none  &none  &none   &none   &none     &kp FSLH   &kp N4   &kp N5   &kp N6  &kp MINUS  &none
 &none  &none  &none  &none   &none   &none     &kp PRCNT  &kp N1   &kp N2   &kp N3  &kp N0     &none
                      &trans  &trans  &trans    &none      &kp DOT  &kp DOT
             >;
