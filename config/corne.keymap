@@ -206,7 +206,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ESC_TOG_CONTROL_LAYER";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&tog 6>;
+            bindings = <&kp ESC>, <&to 6>;
         };
     };
 
