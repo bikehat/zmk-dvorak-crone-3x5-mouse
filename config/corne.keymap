@@ -284,14 +284,5 @@
                                        &none            &none     &none        &none       &none      &trans
             >;
         };
-
-        unicode_layer {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &u2500  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none
-                     &none  &none  &none    &none  &none   &none
-            >;
-        };
     };
 };
