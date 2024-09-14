@@ -17,3 +17,7 @@ include:
     shield: corne_left
   - board: nrfmicro_13
     shield: corne_right
+    
+# ref : [ zmk.dev/docs/troubleshooting/connection-issues ]
+  - board: nrfmicro_13
+    shield: settings_reset
