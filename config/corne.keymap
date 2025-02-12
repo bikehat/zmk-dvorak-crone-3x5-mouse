@@ -18,6 +18,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     macros {
@@ -238,10 +241,10 @@
 
         helper_right_layer {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans          &trans         &trans         &trans  &trans     &trans           &none
-&none  &trans  &trans  &trans  &trans  &trans          &trans         &trans         &trans  &trans     &trans           &none
-&none  &trans  &trans  &trans  &trans  &trans          &kp RIGHT_ALT  &kp RIGHT_GUI  &none   &kp RCTRL  &kp RIGHT_SHIFT  &none
-                       &none   &none   &kp KP_ENTER    &none          &kp KP_ENTER   &none
+&none  &trans  &trans  &trans  &trans  &trans        &trans         &trans         &trans  &trans     &trans           &none
+&none  &trans  &trans  &trans  &trans  &trans        &trans         &trans         &trans  &trans     &trans           &none
+&none  &trans  &trans  &trans  &trans  &trans        &kp RIGHT_ALT  &kp RIGHT_GUI  &none   &kp RCTRL  &kp RIGHT_SHIFT  &none
+                       &none   &none   &kp DELETE    &none          &kp KP_ENTER   &none
             >;
         };
 
