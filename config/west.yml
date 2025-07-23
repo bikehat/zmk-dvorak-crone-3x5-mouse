@@ -1,14 +1,24 @@
 manifest:
   remotes:
-    - name: urob
-      url-base: https://github.com/urob/
+    # old
+    # - name: urob
+    #   url-base: https://github.com/urob/
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
+    ## old
+    # - name: zmk
+    #  remote: urob
+    #  revision: main
+    #  import: app/west.yml
+    # - name: zmk-helpers
+    #  remote: urob
+    #  revision: main
     - name: zmk
-      remote: urob
+      remote: zmk
       revision: main
       import: app/west.yml
-    - name: zmk-helpers
-      remote: urob
-      revision: main
   self:
     path: config
+# update 250720 
+# https://zmk.dev/docs/keymaps/behaviors/mouse-emulation 
