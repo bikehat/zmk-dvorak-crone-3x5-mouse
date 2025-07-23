@@ -189,13 +189,6 @@
             bindings = <&kp LS(LBRC) &kp RBRC &kp LEFT>;
             label = "R_CUR";
         };
-
-        u2500: u2500 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RS(RC(U)) &kp NUMBER_2 &kp N5 &kp N0 &kp N0 &kp SPACE>;
-            label = "U2500";
-        };
     };
 
     behaviors {
