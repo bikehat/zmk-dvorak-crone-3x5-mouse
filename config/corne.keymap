@@ -18,6 +18,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 //  i dunno why after, edit online always error [20250208] after DEL that line its "fine" | show error: #include <dt-bindings/zmk/pointing.h>
 //  ref: https://github.com/nickcoutsos/keymap-editor/discussions/277
@@ -259,10 +260,10 @@
 
         num_layer {
             bindings = <
-&none  &none  &none  &none   &none   &none     &kp STAR   &kp N7   &kp N8   &kp N9  &kp PLUS   &none
-&none  &none  &none  &none   &none   &none     &kp FSLH   &kp N4   &kp N5   &kp N6  &kp MINUS  &none
-&none  &none  &none  &none   &none   &none     &kp PRCNT  &kp N1   &kp N2   &kp N3  &kp N0     &none
-                     &trans  &trans  &trans    &none      &kp DOT  &kp DOT
+&none  &none  &none  &none   &kp LG(P)  &kp LG(M)            &kp STAR   &kp N7         &kp N8             &kp N9  &kp PLUS   &none
+&none  &none  &none  &none   &none      &none                &kp FSLH   &kp N4         &kp N5             &kp N6  &kp MINUS  &none
+&none  &none  &none  &none   &none      &none                &kp PRCNT  &kp N1         &kp N2             &kp N3  &kp N0     &none
+                     &trans  &trans     &kp LG(LS(ENTER))    &none      &kp LG(SLASH)  &kp LG(LS(SLASH))
             >;
         };
 
