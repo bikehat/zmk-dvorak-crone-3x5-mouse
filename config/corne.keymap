@@ -259,7 +259,7 @@
                        &none   &kp TAB  &kp DELETE    &none          &kp KP_ENTER   &none
             >;
         };
-....
+
         symbol_layer {
             bindings = <
 &none  &kp POUND      &kp CARET  &kp LBRC   &kp RBRC  &kp PIPE         &none  &none  &none  &none  &none   &none
