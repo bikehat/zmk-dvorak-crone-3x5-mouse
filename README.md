@@ -1,8 +1,9 @@
 Fw Zephyr 3.5
 - This config was built with: https://nickcoutsos.github.io/keymap-editor (use it to modify keymap)
 
-log date 250725 : Xorg
 ```bash
+# log date 250725 : Xorg
+
 $ ...xxx Keyboard: client bug: event processing lagging behind by 'xx' ms, your system is too slow
 
 $ keyboard: always repert core events
@@ -11,6 +12,7 @@ $ Option "Device" xxxx
 
 only personal opinion | reduce pain BLE in your system
 edit zmk file ``config/corne.conf``
+
 ```bash
 # https://zmk.dev/docs/keymaps/behaviors/mouse-emulation
 # warning: REFRESHING THE HID DESCRIPTOR
