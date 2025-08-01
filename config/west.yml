@@ -25,9 +25,7 @@ manifest:
     # - name: zmk-auto-layer
     #   remote: urob
     #   revision: main
-    - name: zmk-smart-toggle
-      remote: swapper
-      revision: main
+    
   self:
     path: config
     
