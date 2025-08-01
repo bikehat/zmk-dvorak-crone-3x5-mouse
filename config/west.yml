@@ -1,11 +1,17 @@
-manifest:
+cmanifest:
   remotes:
-    - name: zmk
-      url-base: https://github.com/zmkfirmware
+  # - name: zmk
+    - name: zmkfirmware
+      url-base: https://github.com/ftc/
+  #   url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: zmk
-      revision: main
+  #   remote: zmk
+  #   revision: main
+      remote: zmkfirmware
+      revision: mouse-ftc
       import: app/west.yml
   self:
     path: config
+    
+# 25081 use ftc
