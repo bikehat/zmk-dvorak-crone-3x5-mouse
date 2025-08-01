@@ -12,7 +12,7 @@ cmanifest:
     # 250712
     # - name: zmk
     #   url-base: https://github.com/ftc/
-      - name: swapper
+    - name: swapper
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
