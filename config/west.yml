@@ -14,4 +14,4 @@ cmanifest:
   self:
     path: config
     
-# 25081 use ftc
+# 25081 use ftc | new zmkfirmware random lagging on BLE
