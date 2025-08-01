@@ -1,6 +1,7 @@
 Fw Zephyr 3.5
 - This config was built with: https://nickcoutsos.github.io/keymap-editor (use it to modify keymap)
 
+```sh
                 KEY POSITIONS 3 x 5
   ╭─────────────────────╮ ╭─────────────────────╮
   │  ;   ,   .   P   Y  │ │  P   G   C   R   L  │
@@ -8,6 +9,7 @@ Fw Zephyr 3.5
   │  '   Q   J   K   X  │ │  B   M   W   V   Z  │
   ╰───────╮ Esc Tab Spc │ │ Cps Ent Bsp ╭───────╯
           ╰─────────────╯ ╰─────────────╯ 
+```
 
 ```bash
 # log date 250725 : Xorg
