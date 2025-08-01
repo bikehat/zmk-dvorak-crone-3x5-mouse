@@ -6,49 +6,23 @@
 /*              KEY POSITIONS 3 x 5
 
   ╭─────────────────────╮ ╭─────────────────────╮
-  │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │
-  │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
-  │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
-  ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
+  │  ;   ,   .   P   Y  │ │  P   G   C   R   L  │
+  │  A   O   E   U   I  │ │  D   H   T   N   S  │
+  │  '   Q   J   K   X  │ │  B   M   W   V   Z  │
+  ╰───────╮ Esc Tab Spc │ │ Cps Ent Bsp ╭───────╯
           ╰─────────────╯ ╰─────────────╯ 
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2500  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 10
 
 #include <dt-bindings/zmk/pointing.h>
-
-note: old setup https://zmk.dev/docs/keymaps/behaviors/mouse-emulation
-report problem on Xorg
-      $ ...xxx Keyboard: client bug: event processing lagging behind by 'xx' ms, your system is too slow
-      $ keyboard: always repert core events
-      $ Option "Device" xxxx
-
-250801 try ftc : https://gist.github.com/krissen/dd27082e7ab0575619c7a31f4d2ec7ae
 */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
-/*
-  250801 ftc 
-*/
-#include <dt-bindings/zmk/mouse.h>
-
-#define U_MOUSE_MOVE_MAX 1400
-
-#undef MOVE_UP
-#undef MOVE_DOWN
-#undef MOVE_LEFT
-#undef MOVE_RIGHT
-#define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
-#define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
-#define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
-#define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
-
-&mmv {
-	time-to-max-speed-ms = <800>;
-};
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     macros {
