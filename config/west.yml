@@ -1,17 +1,35 @@
 cmanifest:
   remotes:
-  # - name: zmk
     - name: zmkfirmware
-      url-base: https://github.com/ftc/
-  #   url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    # Additional modules containing boards/shields/custom code can be listed here as well
+    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    #
+    # 241124
+    # - name: urob
+    #   url-base: https://github.com/urob
+    #
+    # 250712
+    # - name: zmk
+    #   url-base: https://github.com/ftc/
+      - name: swapper
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-  #   remote: zmk
-  #   revision: main
       remote: zmkfirmware
-      revision: mouse-ftc
-      import: app/west.yml
+      revision: main
+      import: app/west.yml  
+    #   remote: zmk
+    #   revision: main
+    #
+    # - name: zmk-auto-layer
+    #   remote: urob
+    #   revision: main
+    - name: zmk-smart-toggle
+      remote: swapper
+      revision: main
   self:
     path: config
     
-# 25081 use ftc | new zmkfirmware random lagging on BLE
+# 241101 use urob | work but i dunno must remove 'includem...dsi' add new build always error
+# 250701 use ftc  | ramdom lagging
