@@ -3,7 +3,8 @@
 
 
 ```note
-Dvorak
+
+LY0 Dvorak
                 KEY POSITIONS 3 x 5
   ╭─────────────────────╮ ╭─────────────────────╮
   │  ;   ,   .   P   Y  │ │  P   G   C   R   L  │
@@ -16,18 +17,20 @@ Hold
   ╭─────────────────────╮ ╭─────────────────────╮
   │  -   -  LY5 LY6  -  │ │  -   -  LY6  -   -  │
   │  -   -   -   -   -  │ │  -  ly6 ly6  -   -  │
-  │ Shf ly5 LY3 LY4  -  │ │  -  LY4  -  LY5  Shf│
-  ╰───────╮ [T]  -  LY6 │ │ ly2  -   -  ╭───────╯
+  │ Shf ly5 LY2 LY7  -  │ │  -   -  LY3 LY7 Shf │
+  ╰───────╮ [T]  -  LY6 │ │ ly1  -   -  ╭───────╯
           ╰─────────────╯ ╰─────────────╯
 
 *note: small (ly5, ly6) is temporary finger trigger or not
+        [T] = Toggle [doube tab]
 
-LY3        = Helper L
-LY4        = Helper R
-LY5        = Primary Number && mod shortcut
+lY1        = Bt Connect + Reset | F1 - 12 
+LY2        = Helper L [ctrl + shift + mod]
+LY3        = Helper R [ctrl + shift + mod]
+LY4        = Symbol [R] + @ [L]
+LY5        = Primary Number [L] + Symbol && mod shortcut
 LY6 | [T]  = Mouse && Control arrow + page
 LY7        = Macro
-lY2        = Bt Connect + Reset | F1 - 12 
 ```
 
 
