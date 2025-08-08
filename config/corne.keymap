@@ -257,8 +257,8 @@
 
         num_layer {
             bindings = <
-&none  &kp LS(LG(PAGE_UP))    &none      &none          &kp LG(P)      &kp LG(M)            &kp STAR   &kp N7             &kp N8         &kp N9  &kp PLUS   &none
-&none  &kp LS(LG(PAGE_DOWN))  &none      &none          &kp LG(R)      &kp LG(E)            &kp FSLH   &kp N4             &kp N5         &kp N6  &kp MINUS  &none
+&none  &kp LS(LA(PAGE_UP))    &none      &none          &kp LG(P)      &kp LG(M)            &kp STAR   &kp N7             &kp N8         &kp N9  &kp PLUS   &none
+&none  &kp LS(LA(PAGE_DOWN))  &none      &none          &kp LG(R)      &kp LG(E)            &kp FSLH   &kp N4             &kp N5         &kp N6  &kp MINUS  &none
 &none  &kp LEFT_SHIFT         &kp RCTRL  &none          &kp LEFT_META  &none                &kp PRCNT  &kp N1             &kp N2         &kp N3  &kp N0     &none
                                          &kp LS(LG(E))  &kp LS(LG(R))  &kp LG(LS(ENTER))    &none      &kp LG(LS(SLASH))  &kp LG(SLASH)
             >;
