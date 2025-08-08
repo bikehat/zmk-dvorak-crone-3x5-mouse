@@ -8,12 +8,7 @@ manifest:
     # 241124
     # - name: urob
     #   url-base: https://github.com/urob
-    #
-    # 250712
-    # - name: zmk
-    #   url-base: https://github.com/ftc/
-    - name: swapper
-      url-base: https://github.com/caksoylar
+    
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -30,4 +25,3 @@ manifest:
     path: config
     
 # 241101 use urob | work but i dunno must remove 'includem...dsi' add new build always error
-# 250701 use ftc  | ramdom lagging
