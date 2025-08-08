@@ -1,5 +1,5 @@
-- Layout config with: https://nickcoutsos.github.io/keymap-editor (use it to modify keymap)
-- Firmaware Zephyr 3.5
+n- Layout config with: https://nickcoutsos.github.io/keymap-editor (use it to modify keymap)
+- Firmware Zephyr 3.5
 
 
 ```note
@@ -21,20 +21,17 @@ Hold
   ╰───────╮ [T]  -  LY6 │ │ ly1  -   -  ╭───────╯
           ╰─────────────╯ ╰─────────────╯
 
-[T] Toggle = 🖱 Mouse BLE
+[T] Toggle (double tap) = 🖱 Mouse BLE
   ╭─────────────────────╮ ╭─────────────────────╮
   │  ↞   ↡   ↟  ↠   -  │ │  -   ◄   ►   -   -  │
   │  ˂   ˅   ˄   ˃   -  │ │  -   🠜  🠝   🠟  🠞  │
   │ Shf Ctl  -  Mod Alt │ │  -  Hom PUp PDw End │
   ╰───────╮ [T]  -   -  │ │  -   -   -  ╭───────╯
           ╰─────────────╯ ╰─────────────╯
-🠜   🠟  🠝  🠞
-► =  🖱 Right Click
-🠞 =  🖱 Scrool Right
-↠ =  🖱 Move Right
-
-*note: small (ly5, ly6) is temporary finger trigger or not
-        [T] = Toggle [doube tab]
+ ◄  ►    🖱 Left - Right Click
+   ↠    🖱 Scrool Right
+   ˃     🖱 Move Right
+   🠞       keyboard arrow
 
 lY1        = Bt Connect + Reset | F1 - 12 
 LY2        = Helper L [ctrl + shift + mod]
