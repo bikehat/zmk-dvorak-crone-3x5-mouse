@@ -266,10 +266,10 @@
 
         control_layer {
             bindings = <
-&none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none     &none       &mkp LCLK     &mkp RCLK          &none      &none      &none
-&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none     &none       &kp LEFT      &kp UP             &kp DOWN   &kp RIGHT  &none
-&none  &kp LSHIFT      &kp LCTRL       &none         &kp LGUI         &trans    &none       &kp HOME      &kp PG_UP          &kp PG_DN  &kp END    &none
-                                       &trans        &trans           &trans    &kp K_MUTE  &kp C_VOL_UP  &kp C_VOLUME_DOWN
+&none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none           &none       &mkp LCLK     &mkp RCLK          &none      &none      &none
+&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none           &none       &kp LEFT      &kp UP             &kp DOWN   &kp RIGHT  &none
+&none  &kp LSHIFT      &kp LCTRL       &none         &kp LGUI         &kp LEFT_ALT    &none       &kp HOME      &kp PG_UP          &kp PG_DN  &kp END    &none
+                                       &trans        &trans           &trans          &kp K_MUTE  &kp C_VOL_UP  &kp C_VOLUME_DOWN
             >;
         };
 
