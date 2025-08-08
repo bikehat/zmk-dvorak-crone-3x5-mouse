@@ -1,4 +1,4 @@
-n- Layout config with: https://nickcoutsos.github.io/keymap-editor (use it to modify keymap)
+- Layout config with: https://nickcoutsos.github.io/keymap-editor (use it to modify keymap)
 - Firmware Zephyr 3.5
 
 
@@ -21,7 +21,7 @@ Hold
   ╰───────╮ [T]  -  LY6 │ │ ly1  -   -  ╭───────╯
           ╰─────────────╯ ╰─────────────╯
 
-[T] Toggle (double tap) = 🖱 Mouse BLE
+LY6 = [T] Toggle (double tap) : 🖱 Mouse BLE
   ╭─────────────────────╮ ╭─────────────────────╮
   │  ↞   ↡   ↟  ↠   -  │ │  -   ◄   ►   -   -  │
   │  ˂   ˅   ˄   ˃   -  │ │  -   🠜  🠝   🠟  🠞  │
@@ -32,6 +32,7 @@ Hold
    ↠    🖱 Scrool Right
    ˃     🖱 Move Right
    🠞       keyboard arrow
+
 
 lY1        = Bt Connect + Reset | F1 - 12 
 LY2        = Helper L [ctrl + shift + mod]
@@ -45,7 +46,7 @@ LY7        = Macro
 
 
 ```sh
-# log : Xorg
+# log problem fw : Xorg
 
 $ ...xxx Keyboard: client bug: event processing lagging behind by 'xx' ms, your system is too slow
 $ keyboard: always repert core events
