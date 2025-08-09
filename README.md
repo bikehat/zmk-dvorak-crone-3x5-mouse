@@ -1,6 +1,5 @@
-- Layout config with: https://nickcoutsos.github.io/keymap-editor (use it to modify keymap)
+- Layout config with: https://nickcoutsos.github.io/keymap-editor
 - Firmware Zephyr 3.5
-
 
 ```note
 
