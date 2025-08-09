@@ -38,12 +38,12 @@ LY6 | [T]  = Mouse && Control arrow + page
 LY7        = Macro
 ```
 
-|  Legend  |  🖱 Mouse Emulation |
-|    ---   |        ---          |
-| ◄ ►      | Left - Right Click  |
-| ⯮        | Scrool Right        |
-| ˃        | Move Right          |
-| 🠞        | Keyboard Arrow      |
+|  Legend  |        Emulation       |
+|    ---   |           ---          |
+| ◄ ►      | 🖱 Left - Right Click  |
+| ⯮        | 🖱 Mouse Scrool Right  |
+| ˃        | 🖱 Mouse Move Right    |
+| 🠞        | ⌨ Keyboard Arrow Keys |
 
 ```sh
 # log problem fw : Xorg
