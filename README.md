@@ -28,11 +28,6 @@ LY6 = [T] Toggle (double tap) : 🖱 Mouse BLE
   │ Shf Ctl  -  Mod Alt │ │  -  Hom PUp PDw End │
   ╰───────╮ [T]  -   -  │ │  -   -   -  ╭───────╯
           ╰─────────────╯ ╰─────────────╯
- ◄  ►    🖱  Left - Right Click
-   ⯮     🖱 Scrool Right
-   ˃     🖱  Move Right
-   🠞       keyboard arrow
-
 
 lY1        = Bt Connect + Reset | F1 - 12 
 LY2        = Helper L [ctrl + shift + mod]
@@ -43,7 +38,12 @@ LY6 | [T]  = Mouse && Control arrow + page
 LY7        = Macro
 ```
 
-
+|  Legend  |  🖱 Mouse Emulation |
+|    ---   |        ---          |
+| ◄ ►      | Left - Right Click  |
+| ⯮        | Scrool Right        |
+| ˃        | Move Right          |
+| 🠞        | Keyboard Arrow      |
 
 ```sh
 # log problem fw : Xorg
