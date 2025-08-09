@@ -38,7 +38,7 @@ LY6 | [T]  = Mouse && Control arrow + page
 LY7        = Macro
 ```
 
-|  Legend  |        Emulation       |
+|  Legend  |      Emulation LY6     |
 |    ---   |           ---          |
 | ◄ ►      | 🖱 Left - Right Click  |
 | ⯮        | 🖱 Mouse Scrool Right  |
