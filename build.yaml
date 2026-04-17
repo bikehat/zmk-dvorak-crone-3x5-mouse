@@ -13,11 +13,11 @@
 #
 ---
 include:
-  - board: nrfmicro/nrf52840/zmk
+  - board: nice_nano//zmk
     shield: corne_left
-  - board: nrfmicro/nrf52840/zmk
+  - board: nice_nano//zmk
     shield: corne_right
     
 # ref : [ zmk.dev/docs/troubleshooting/connection-issues ]
-  - board: nrfmicro/nrf52840/zmk
+  - board: nice_nano//zmk
     shield: settings_reset
